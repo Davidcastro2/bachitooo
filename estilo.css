@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.4em;
+    background-color: #f4f4f4; /* Fondo claro neutral para legibilidad */
+}
+
+.contenedor {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.encabezado { 
+    background: #1a1a1a; /* Gris casi negro, transmite seriedad profunda */
+    overflow: hidden;
+}
+.logo {
+    float: left;
+    position: relative;
+    top: 15px; 
+}
+.encabezado nav { 
+    float: right; 
+}
+.encabezado nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.encabezado nav ul li { 
+    display: inline-block;
+    margin-right: -4px;
+}
+.encabezado nav ul li a { 
+    display: block;
+    color: #ffffff;
+    padding: 28px;
+    border-left: 1px solid #333333; /* Separador sutil oscuro */
+    text-decoration: none;
+}
+/* Cambio de color en hover */
+.encabezado nav ul li a:hover { 
+    background: #c62828; /* Rojo de advertencia al pasar el cursor */
+}
+
+/*------------------------------------
+PRESENTACION
+-------------------------------------*/ 
+.presentacion {
+    /* Degradado sombrío e impactante (de gris oscuro a un tono cenizo) */
+    background: radial-gradient(280px at 25% 10%, #424242, #151515);
+    overflow: hidden;
+    border-bottom: 3px solid #c62828; /* Línea de peligro/alerta */
+}  
+.introduccion-presentacion {
+    float: left;
+}
+.introduccion-presentacion h1 {
+    color: #fff;
+    font-size: 2.625em;  
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    line-height: 0.7em; 
+} 
+.introduccion-presentacion h1 span {
+    color: #e0e0e0;
+    font-size: 0.38em; 
+}
+/*------------ Botón de Acción / Aprender más ------------*/
+a.aprender-mas {
+    font-size: 2.1875em;
+    border: 1px solid #b71c1c;
+    padding: 30px 50px;
+    display: block;
+    text-align: center;
+    margin: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #000;
+    border-radius: 10px;
+    /* Degradado rojo (Alerta / Urgencia / Ayuda) */
+    background: linear-gradient(to top, #c62828, #8e0000);
+    box-shadow: 0 8px 0 0 #5f0000,
+                0 0 25px 5px rgba(255, 255, 255, 0.2);
+} 
+a.aprender-mas:hover {
+    box-shadow: 0 0 25px 5px #000;
+}
+.presentacion img {
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+/*****************************************************************
+/*------------ Acceso rápido (Sección de Prevención/Salud) ------------*/
+.acceso-rapido {
+    background: #2e7d32; /* Verde oscuro: representa salud, esperanza y rehabilitación */
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 16px;
+}
+.acceso-rapido figure {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3 {
+    font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover {
+    text-decoration: none;
+}
+
+/*--------- Bloque contenido (Artículos e Información) ----------*/
+.bloque-contenido {
+    overflow: hidden; 
+    margin-top: 25px; 
+}
+.bloque-contenido .contenedor {  
+    display: table;  
+}
+.articulos { 
+    background: #ffffff; /* Fondo blanco limpio para la lectura de testimonios/datos */
+    width: 65%; 
+    display: table-cell;  
+    padding-right: 30px; 
+}
+.articulos article {  
+    margin-bottom: 10px;
+}
+.articulos h2 {  
+    color: #212121;
+    font-size: 1.625em;
+    border-bottom: 3px solid #c62828; /* Detalle en rojo de advertencia */
+    padding-bottom: 25px;
+}
+.articulos img {  
+    float: left;
+    margin-right: 10px;
+    position: relative; 
+    top: 5px;           
+}
+.articulos article h1 {  
+    font-size: 1.25em;  
+    margin: 8px 0 8px 0;  
+}
+.articulos article h1 a {  
+    color: #c62828;  /* Títulos de artículos en rojo para captar atención urgente */
+    text-decoration: none;
+}
+.articulos article h1 a:hover {  
+    text-decoration: underline;
+}
+.articulos article p {  
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em; 
+    color: #424242;
+}
+
+/*--------- Columna Lateral (Enlaces de Ayuda / Teléfonos) ---------*/
+.complementario {    
+    background: #37474f; /* Gris azulado clínico / Institucional */
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20px; 
+}
+.complementario h2 {   
+    font-size: 1.625em;  
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.complementario ul {   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li { 
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+.complementario ul li a { 
+    color: #fff;
+    text-decoration: none;
+}
+.complementario ul li a:hover { 
+    color: #ff8a80; /* Rojo suave/salmón al pasar el cursor */
+    text-decoration: underline; 
+}
+
+/***********************************************************************/
+/************** Suscripción / Boletín de Ayuda */
+.suscripcion {  
+    overflow: hidden;
+    background: #e0e0e0;   /* Gris claro neutral */
+    margin-top: 20px;  
+    padding: 15px; /* Añadido para mejor espaciado */
+}
+.suscripcion h2 { 
+    float: left;
+    font-size: 1.625em; 
+    color: #212121;
+    font-weight: normal;
+}
+.suscripcion form {  
+    float: right;
+    position: relative; 
+    top: 20px;   
+}
+.suscripcion form input {   
+    border: 1px solid #9e9e9e;
+    padding: 10px;
+}
+.suscripcion form input[type="submit"] { 
+    border: 1px solid #8e0000;
+    padding: 10px;
+    background: #c62828; /* Botón llamativo en rojo */
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: 0 -1px 0px 0 #ef5350 inset;
+    cursor: pointer;
+}
+.suscripcion form input[type="submit"]:hover { 
+    background: #b71c1c; /* Rojo más oscuro al hacer hover */
+}
+
+/*********** Pie de página **************/
+.piedepagina {   
+    background: #1a1a1a; /* Fondo oscuro definitivo */
+    padding: 20px 0; 
+}
+.piedepagina .contenedor {   
+    display: table;
+}
+.piedepagina small {  
+    display: table-cell;
+    color: #9e9e9e;  
+}
+.piedepagina nav { 
+    display: table-cell;
+    text-align: right; 
+}
+.piedepagina nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li { 
+    display: inline-block;
+    padding-left: 10px;  
+}
+.piedepagina nav ul li a { 
+    color: #9e9e9e;
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover { 
+    color: #fff;
+    text-decoration: underline;
+}
+
+/************* Redes sociales ***************/
+.social {
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.social a {
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+.social a:hover {
+    opacity: 1;
+}
+.social img {
+    border-radius: 50%;
+    display: block;
+}
